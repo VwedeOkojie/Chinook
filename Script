@@ -1,0 +1,150 @@
+SELECT TOP 10 Track.Name Tracks, COUNT (Invoice.InvoiceId) AS Total_Sales
+FROM Track
+LEFT JOIN InvoiceLine
+ON Track.TrackId = InvoiceLine.TrackId
+LEFT JOIN Invoice
+ON InvoiceLine.InvoiceId =Invoice.InvoiceId
+GROUP BY Track.Name
+ORDER BY Total_Sales DESC
+
+
+SELECT TOP 5 Customer.Country, SUM(Invoice.Total) AS Total_Revenue
+FROM Customer
+LEFT JOIN Invoice
+ON Customer.CustomerId = Invoice.CustomerId
+GROUP BY Customer.Country 
+ORDER BY SUM(Invoice.Total) DESC
+
+
+SELECT TOP 4000
+    Genre.Name AS Genre, 
+    Invoice.BillingCountry AS Country, 
+    SUM(Invoice.Total) AS Total_Revenue,
+    COUNT(InvoiceLine.InvoiceLineId) AS Units_Sold
+FROM Invoice
+RIGHT JOIN InvoiceLine ON InvoiceLine.InvoiceId = Invoice.InvoiceId
+RIGHT JOIN Track ON Track.TrackId = InvoiceLine.TrackId
+RIGHT JOIN Genre ON Genre.GenreId = Track.GenreId
+GROUP BY Genre.Name, Invoice.BillingCountry
+ORDER BY SUM(Invoice.Total) DESC;
+
+
+ 
+SELECT TOP 10 
+	Customer.FirstName, 
+	Customer.LastName, 
+	SUM(Invoice.Total) AS Total_Spent,
+
+		(SELECT TOP 1 Genre.Name
+		FROM Track
+		JOIN Genre ON Track.GenreId = Genre.GenreId
+		JOIN InvoiceLine ON InvoiceLine.TrackId = Track.TrackId 
+		WHERE InvoiceLine.InvoiceId IN 
+           
+	(SELECT InvoiceId 
+     FROM Invoice 
+     WHERE CustomerId = Customer.CustomerId)
+	 GROUP BY Genre.Name
+	 ORDER BY COUNT (*) DESC) AS Favourite_Genre
+
+FROM Customer
+JOIN Invoice ON Customer.CustomerId = Invoice.CustomerId
+GROUP BY Customer.CustomerId, Customer.FirstName, Customer.LastName
+ORDER BY SUM(Invoice.Total) DESC
+
+
+SELECT TOP 4000
+    CustomerId,
+	InvoiceDate,
+    Total,
+    SUM(Total) OVER (PARTITION BY CustomerId ORDER BY InvoiceDate) AS CumulativeSpending
+FROM Invoice
+ORDER BY CustomerId, InvoiceDate;
+
+
+
+WITH RecursiveEmployeeCTE AS (
+    SELECT Employee.EmployeeId, Employee.ReportsTo, Employee.FirstName, Employee.LastName, Employee.Title, 0 AS Level
+    FROM Employee
+    WHERE ReportsTo IS NULL
+    UNION ALL
+    SELECT Employee.EmployeeId, Employee.ReportsTo, Employee.FirstName, Employee.LastName, Employee.Title, Level + 1
+    FROM Employee
+    INNER JOIN RecursiveEmployeeCTE r ON Employee.ReportsTo = r.EmployeeId
+)
+SELECT * FROM RecursiveEmployeeCTE
+ORDER BY Level, ReportsTo;
+
+
+SELECT TOP 4000
+    FORMAT(InvoiceDate, 'yyyy') AS Year,
+    SUM(Total) AS Annual_Sales
+FROM Invoice
+GROUP BY FORMAT(InvoiceDate, 'yyyy')
+ORDER BY Year;
+
+SELECT TOP 3
+    Employee.FirstName,
+    Employee.LastName,
+    SUM(Invoice.Total) AS TotalSales
+FROM
+    Employee
+JOIN
+    Customer ON Employee.EmployeeId = Customer.SupportRepId
+JOIN
+    Invoice ON Customer.CustomerId = Invoice.CustomerId
+GROUP BY
+    Employee.EmployeeId, Employee.FirstName, Employee.LastName
+ORDER BY
+    TotalSales DESC
+
+
+	SELECT TOP 1
+    Artist.Name AS ArtistName,
+    COUNT(PT.PlaylistId) AS PlaylistAppearances
+FROM
+    Artist
+JOIN
+    Album ON Artist.ArtistId = Album.ArtistId
+JOIN
+    Track ON Album.AlbumId = Track.AlbumId
+JOIN
+    PlaylistTrack PT ON Track.TrackId = PT.TrackId
+GROUP BY
+    Album.ArtistId, Artist.Name
+ORDER BY
+    PlaylistAppearances DESC
+
+SELECT
+    Customer.Country,
+    COUNT(Invoice.InvoiceId) AS NumberOfSales,
+    SUM(Invoice.Total) AS TotalSales
+FROM
+    Customer
+JOIN
+    Invoice ON Customer.CustomerId = Invoice.CustomerId
+GROUP BY
+    Customer.Country
+ORDER BY
+    TotalSales DESC;
+
+
+SELECT
+    Genre.Name AS Genre,
+    SUM(InvoiceLine.Quantity * InvoiceLine.UnitPrice) AS TotalSales
+FROM
+    Customer
+JOIN
+    Invoice ON Customer.CustomerId = Invoice.CustomerId
+JOIN
+    InvoiceLine ON Invoice.InvoiceId = InvoiceLine.InvoiceId
+JOIN
+    Track ON InvoiceLine.TrackId = Track.TrackId
+JOIN
+    Genre ON Track.GenreId = Genre.GenreId
+WHERE
+    Customer.Country = 'Canada'
+GROUP BY
+    Genre.Name
+ORDER BY
+    TotalSales DESC;
