@@ -1,7 +1,6 @@
 # Chinook Data Analysis Project
 
-![apple-music-logo-clipart-iphone-1](https://github.com/VwedeOkojie/Chinook/assets/161823174/7abb6742-5f5a-48d6-a48e-05e5ff2b45d5)
-
+![Untitled design](https://github.com/VwedeOkojie/Chinook/assets/161823174/f3e4db09-0ad4-4ea0-9441-4aba52f6a2f1)
 
 
 ## Project Description
