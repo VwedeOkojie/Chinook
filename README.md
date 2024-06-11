@@ -1,6 +1,7 @@
 # Chinook Data Analysis Project
 
-![Chinook](path/to/chinook-photo.jpg)
+![spotify logo](https://github.com/VwedeOkojie/Chinook/assets/161823174/fbd28af9-28d7-4e23-9a6e-2570d1bc3c3d)
+
 
 ## Project Description
 
@@ -17,11 +18,11 @@ The project uses sales data sourced from the Chinook database, which provides de
 
 ## Data Processing
 
-1. **Cleaning the Dataset:**
-    - Handling missing values
-    - Removing duplicates
-2. **Transforming the Data:**
-    - Structuring the data into a format suitable for analysis
+- **Cleaning the Dataset:**
+  - Handling missing values
+  - Removing duplicates
+- **Transforming the Data:**
+  - Structuring the data into a format suitable for analysis
 
 ## Data Loading
 
@@ -29,36 +30,44 @@ The project uses sales data sourced from the Chinook database, which provides de
 
 ## Analysis and Insights
 
-1. **Total Sales Analysis:**
-    - Annual sales trends
-    - Top-selling genres and countries
-2. **Customer Analysis:**
-    - Top customers by total sales
-    - Customer demographics and purchasing patterns
-3. **Product Analysis:**
-    - Top-selling artists and tracks
-    - Revenue by genre and country
+- **Total Sales Analysis:**
+  - Annual sales trends
+  - Top-selling genres and countries
+- **Customer Analysis:**
+  - Top customers by total sales
+  - Customer demographics and purchasing patterns
+- **Product Analysis:**
+  - Top-selling artists and tracks
+  - Revenue by genre and country
 
 ## How to Use the Project
 
 1. **Download the Dataset:**
-    - Get the Chinook database from the provided source.
+   - Get the Chinook database from the provided source.
+   
 2. **Clean and Preprocess the Data:**
-    - Use Python for data cleaning and preprocessing if necessary.
+   - Use Python for data cleaning and preprocessing if necessary.
+   
 3. **Load the Data into a SQL Database:**
-    - Use SQL scripts to load the cleaned data into the database.
+   - Use SQL scripts to load the cleaned data into the database.
+   
 4. **Run SQL Queries:**
-    - Analyze the data and extract insights using the provided SQL scripts.
+   - Analyze the data and extract insights using the provided SQL scripts.
+
+5. **Run Python Codes:**
+   - Use the following command to run the Jupyter Notebook for Python scripts:
+     ```sh
+     jupyter notebook Python\ Script.ipynb
+     ```
 
 ## Project Structure
 
-├── data
-│ ├── chinook.db # Chinook database file
-├── scripts
-│ ├── data_loading.sql # SQL script for data loading
-│ ├── analysis.sql # SQL scripts for data analysis
-├── README.md # Project overview and instructions (You are here)
-
+- `Chinook SQL Commands and Visualization.ipynb` - Jupyter Notebook for SQL commands and visualizations
+- `Dataset` - Folder containing the Chinook database file
+  - `chinook.db`
+- `Python Script.ipynb` - Jupyter Notebook for Python script
+- `README.md` - Project overview and instructions (You are here)
+- `SQL Script` - Folder containing SQL scripts for data loading and analysis
 
 ## Contributing
 
