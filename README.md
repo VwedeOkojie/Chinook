@@ -1,6 +1,7 @@
 # Chinook Data Analysis Project
 
-![spotify logo](https://github.com/VwedeOkojie/Chinook/assets/161823174/fbd28af9-28d7-4e23-9a6e-2570d1bc3c3d)
+![apple-music-logo-clipart-iphone-1](https://github.com/VwedeOkojie/Chinook/assets/161823174/7abb6742-5f5a-48d6-a48e-05e5ff2b45d5)
+
 
 
 ## Project Description
