@@ -67,7 +67,7 @@ The project uses sales data sourced from the Chinook database, which provides de
   - `chinook.db`
 - `Python Script.ipynb` - Jupyter Notebook for Python script
 - `README.md` - Project overview and instructions (You are here)
-- `SQL Script` - Folder containing SQL scripts for data loading and analysis
+- ![SQL Script](https://github.com/VwedeOkojie/Chinook/blob/be10354b39abd411633bfaa284b4169d47aa1318/SQL%20Script) - Folder containing SQL scripts for data loading and analysis
 
 ## Contributing
 
