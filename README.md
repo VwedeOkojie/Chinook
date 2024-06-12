@@ -30,15 +30,51 @@ The project uses sales data sourced from the Chinook database, which provides de
 
 ## Analysis and Insights
 
-- **Total Sales Analysis:**
-  - Annual sales trends
-  - Top-selling genres and countries
-- **Customer Analysis:**
-  - Top customers by total sales
-  - Customer demographics and purchasing patterns
-- **Product Analysis:**
-  - Top-selling artists and tracks
-  - Revenue by genre and country
+### Total Sales Analysis
+
+#### Annual Sales Trends
+![Annual Sales Over Time](https://github.com/VwedeOkojie/Chinook/assets/161823174/eabf0296-0a53-4af3-9a41-91683cdf54e1)
+
+
+This line chart tracks the annual sales over the years. It shows a peak in 2022, followed by fluctuations in subsequent years.
+
+#### Top-Selling Genres and Countries
+![Top 5 Contries by Total](https://github.com/VwedeOkojie/Chinook/assets/161823174/67a402f0-4d40-442b-a2e2-635239f050c3)
+
+
+This bar chart displays the total revenue generated from music sales in the top 5 countries. The USA leads significantly, followed by Canada and France.
+
+![Genre Sales in Canada](https://github.com/VwedeOkojie/Music-Sales-Project/assets/161823174/file-ZPOR4cnDijVWyYhyVrCc34xz)
+
+This bar chart illustrates the sales of different music genres in Canada. Rock and Latin genres dominate the sales figures.
+
+### Customer Analysis
+
+#### Top Customers by Total Sales
+![Top 10 Customers by Total Spent](https://github.com/VwedeOkojie/Music-Sales-Project/assets/161823174/file-ZubVgajeWPCZ84LUd5Fv2xmU)
+
+This bar chart highlights the top 10 customers based on their total spending. Helena Holý and Richard Cunningham are the top spenders.
+
+### Product Analysis
+
+#### Top-Selling Artists and Tracks
+![Top 10 Tracks by Total Sales](https://github.com/VwedeOkojie/Music-Sales-Project/assets/161823174/file-GPEvCDOhvpRv7FjJvS2Un1GF)
+
+This bar chart shows the top 10 tracks by total sales. "Dazed And Confused" and "The Trooper" lead the list, indicating high popularity and sales performance.
+
+![Top Artist by Playlist Appearances](https://github.com/VwedeOkojie/Music-Sales-Project/assets/161823174/file-TJT1usXMYGHykhUMS1BT5P4c)
+
+This bar chart shows the top artist by the number of playlist appearances. Iron Maiden is the leading artist with the highest number of appearances.
+
+#### Revenue by Genre and Country
+![Revenue and Units Sold by Genre and Country](https://github.com/VwedeOkojie/Music-Sales-Project/assets/161823174/file-YfX4FLzAcbPaQzx1zZ1j4801)
+
+This scatter plot illustrates the total revenue and units sold for different genres across various countries. The size of the bubbles represents the number of units sold, with the USA and Rock genre showing the highest sales and revenue.
+
+![Top 3 Employees by Total Sales](https://github.com/VwedeOkojie/Music-Sales-Project/assets/161823174/file-seJSUdcjb0RopJa395kSrdmY)
+
+This bar chart ranks the top 3 employees by their total sales. Jane Peacock leads the chart, followed by Margaret Park and Steve Johnson.
+
 
 ## How to Use the Project
 
