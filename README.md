@@ -107,12 +107,11 @@ This bar chart ranks the top 3 employees by their total sales. Jane Peacock lead
 
 ## Project Structure
 
-- `Chinook SQL Commands and Visualization.ipynb` - Jupyter Notebook for SQL commands and visualizations
-- `Dataset` - Folder containing the Chinook database file
-  - `chinook.db`
-- `Python Script.ipynb` - Jupyter Notebook for Python script
-- `README.md` - Project overview and instructions (You are here)
-- ![SQL Script](https://github.com/VwedeOkojie/Chinook/blob/be10354b39abd411633bfaa284b4169d47aa1318/SQL%20Script) - Folder containing SQL scripts for data loading and analysis
+- [Chinook SQL Commands and Visualization.ipynb](https://github.com/VwedeOkojie/Chinook/blob/7c83d0fb991d52c99b6e56433213cdb3ae7aa365/Chinook%20SQL%20Commands%20and%20Visualization.ipynb) - Jupyter Notebook for SQL commands and visualizations
+- [Dataset](https://github.com/VwedeOkojie/Chinook/blob/7c83d0fb991d52c99b6e56433213cdb3ae7aa365/Dataset) - Folder containing the Chinook database file
+- [Python Script.ipynb](https://github.com/VwedeOkojie/Chinook/blob/7c83d0fb991d52c99b6e56433213cdb3ae7aa365/Python%20Script.ipynb) - Jupyter Notebook for Python script
+- [README.md](https://github.com/VwedeOkojie/Chinook/blob/7c83d0fb991d52c99b6e56433213cdb3ae7aa365/README.md) - Project overview and instructions `You are here`
+- [SQL Script](https://github.com/VwedeOkojie/Chinook/blob/be10354b39abd411633bfaa284b4169d47aa1318/SQL%20Script) - Folder containing SQL scripts for data loading and analysis
 
 ## Contributing
 
