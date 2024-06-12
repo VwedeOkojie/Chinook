@@ -44,34 +44,43 @@ This line chart tracks the annual sales over the years. It shows a peak in 2022,
 
 This bar chart displays the total revenue generated from music sales in the top 5 countries. The USA leads significantly, followed by Canada and France.
 
-![Genre Sales in Canada](https://github.com/VwedeOkojie/Music-Sales-Project/assets/161823174/file-ZPOR4cnDijVWyYhyVrCc34xz)
+#### Top-Selling Genres in Canada
+![Genre Sales in Canada](https://github.com/VwedeOkojie/Chinook/assets/161823174/8b1244d9-bcbd-4b60-9767-4a23c6ab3626)
+
 
 This bar chart illustrates the sales of different music genres in Canada. Rock and Latin genres dominate the sales figures.
 
 ### Customer Analysis
 
 #### Top Customers by Total Sales
-![Top 10 Customers by Total Spent](https://github.com/VwedeOkojie/Music-Sales-Project/assets/161823174/file-ZubVgajeWPCZ84LUd5Fv2xmU)
+![Top 10 Customers](https://github.com/VwedeOkojie/Chinook/assets/161823174/66c211ea-f743-4a8b-b2a8-fc5f80460356)
+
 
 This bar chart highlights the top 10 customers based on their total spending. Helena Holý and Richard Cunningham are the top spenders.
 
 ### Product Analysis
 
 #### Top-Selling Artists and Tracks
-![Top 10 Tracks by Total Sales](https://github.com/VwedeOkojie/Music-Sales-Project/assets/161823174/file-GPEvCDOhvpRv7FjJvS2Un1GF)
+![Top 10 Tracks by Total Sales](https://github.com/VwedeOkojie/Chinook/assets/161823174/97fd7050-553c-48d8-9eb5-4dbaa08c1f3e)
+
 
 This bar chart shows the top 10 tracks by total sales. "Dazed And Confused" and "The Trooper" lead the list, indicating high popularity and sales performance.
 
-![Top Artist by Playlist Appearances](https://github.com/VwedeOkojie/Music-Sales-Project/assets/161823174/file-TJT1usXMYGHykhUMS1BT5P4c)
+#### Top Artist
+![Top Artist](https://github.com/VwedeOkojie/Chinook/assets/161823174/48f70283-43af-4771-baeb-9818b0af807c)
+
 
 This bar chart shows the top artist by the number of playlist appearances. Iron Maiden is the leading artist with the highest number of appearances.
 
 #### Revenue by Genre and Country
-![Revenue and Units Sold by Genre and Country](https://github.com/VwedeOkojie/Music-Sales-Project/assets/161823174/file-YfX4FLzAcbPaQzx1zZ1j4801)
+![Revenue and Units Sold](https://github.com/VwedeOkojie/Chinook/assets/161823174/9e7faf2e-2ba6-40c6-9b03-924a48892f6b)
+
 
 This scatter plot illustrates the total revenue and units sold for different genres across various countries. The size of the bubbles represents the number of units sold, with the USA and Rock genre showing the highest sales and revenue.
 
-![Top 3 Employees by Total Sales](https://github.com/VwedeOkojie/Music-Sales-Project/assets/161823174/file-seJSUdcjb0RopJa395kSrdmY)
+#### Top 3 Employees
+![Top Employees](https://github.com/VwedeOkojie/Chinook/assets/161823174/d5115632-7ae0-42e1-9b9e-1e3ef06cef94)
+
 
 This bar chart ranks the top 3 employees by their total sales. Jane Peacock leads the chart, followed by Margaret Park and Steve Johnson.
 
